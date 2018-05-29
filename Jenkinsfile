@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'jdk8'
+    }
+    
+  }
   stages {
     stage('Printable') {
       steps {
