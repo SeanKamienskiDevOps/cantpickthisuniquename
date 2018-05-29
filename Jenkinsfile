@@ -8,8 +8,11 @@ pipeline {
   stages {
     stage('Printable') {
       steps {
-        echo 'Doing The Thing'
+        echo 'Doing The Thing, ${MY_NAME}'
       }
     }
+  }
+  environment {
+    MY_NAME = 'Sean'
   }
 }
