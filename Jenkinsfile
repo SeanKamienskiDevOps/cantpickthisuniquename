@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Printable') {
       steps {
-        echo 'Doing The Thing, ${MY_NAME}'
+        echo "Doing The Thing, ${MY_NAME}"
       }
     }
   }
