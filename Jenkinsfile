@@ -15,4 +15,7 @@ pipeline {
   environment {
     MY_NAME = 'Sean'
   }
+  parameters {
+    string(name: 'Name', defaultValue: 'whoever you are', description: 'Who should know about doing the thing?')
+  }
 }
